@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20200401 19:50:14.365" rpa="false">
+<suite id="s1" name="TC 003" source="C:\Users\Nitin Tyagi\PycharmProjects\RobotFrameworkAutomation\SampleCases\TC_003.robot">
+<test id="s1-t1" name="TC_003">
+<kw name="Switch Browser" library="SeleniumLibrary">
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200401 19:50:14.626" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200401 19:50:14.626" endtime="20200401 19:50:14.627"></status>
+</kw>
+<msg timestamp="20200401 19:50:14.631" level="FAIL">No browser with index or alias '1' found.</msg>
+<status status="FAIL" starttime="20200401 19:50:14.626" endtime="20200401 19:50:14.631"></status>
+</kw>
+<status status="FAIL" starttime="20200401 19:50:14.625" endtime="20200401 19:50:14.631" critical="yes">No browser with index or alias '1' found.</status>
+</test>
+<test id="s1-t2" name="TC_004">
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>Yes</arg>
+</arguments>
+<assign>
+<var>${var}</var>
+</assign>
+<msg timestamp="20200401 19:50:14.634" level="INFO">${var} = Yes</msg>
+<status status="PASS" starttime="20200401 19:50:14.634" endtime="20200401 19:50:14.634"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${var}'=='Yes'</arg>
+<arg>log to console</arg>
+<arg>Hello World</arg>
+</arguments>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Hello World</arg>
+</arguments>
+<status status="PASS" starttime="20200401 19:50:14.635" endtime="20200401 19:50:14.636"></status>
+</kw>
+<status status="PASS" starttime="20200401 19:50:14.635" endtime="20200401 19:50:14.636"></status>
+</kw>
+<status status="PASS" starttime="20200401 19:50:14.633" endtime="20200401 19:50:14.636" critical="yes"></status>
+</test>
+<status status="FAIL" starttime="20200401 19:50:14.367" endtime="20200401 19:50:14.638"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" id="s1" name="TC 003">TC 003</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
