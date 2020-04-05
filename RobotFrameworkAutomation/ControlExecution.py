@@ -13,14 +13,3 @@ def read_excel_rows_count():
     r=r+1
     return  r
 
-def read_excel_column_count():
-    c= sh.max_column
-    return  c
-
-def read_excel_cell_data(r,c):
-    cl= sh.cell(int(r),int(c))
-    return cl.value
-
-def write_excel_cell_data(r,c,data):
-    cl= sh.cell(int(r),int(c))
-    cl.value = data
